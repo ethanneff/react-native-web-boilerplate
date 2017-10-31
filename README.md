@@ -23,8 +23,9 @@
 
 - #### tools
 
-  - [sublime linting](https://medium.com/pvtl/linting-for-react-native-bdbb586ff694)
-  - [sublime prettier](https://packagecontrol.io/packages/JsPrettier)
+  - sublime linting https://medium.com/pvtl/linting-for-react-native-bdbb586ff694
+
+  - sublime prettier https://packagecontrol.io/packages/JsPrettier
 
   ```sh
   # dependencies (global)
@@ -45,6 +46,7 @@
   npm i --save react-native-web
   npm i --save react-scripts
   npm i --save react-dom
+  npm i --save gh-pages
   # navigation
   npm i --save react-navigation
   npm i --save react-router
@@ -88,7 +90,7 @@
 - #### publish
 
     ```
-    npm run web:build
+    npm run deploy
     ```
 
 ## Resources
