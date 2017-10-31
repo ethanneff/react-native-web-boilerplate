@@ -1,6 +1,27 @@
-# react native boilerplate for app and web
+# React Native Boilerplate for iOS, Android, and Web
 
-#### build
+## Purpose
+
+    - Code in one place, and your app will work in both mobile and web
+
+## Vision
+
+    - Code reusability
+    - Simplicity
+        - Use `create-react-app` and `create-react-native-app` to handle dev environments
+        - No Webpack/Gulp/Grunt
+        - Github Pages web hosting
+    - Scalability
+        - Decoupled
+        - TDD
+        - Offline first
+        - DX
+        - Redux
+        - Component based hierarchy
+
+## Methodology
+
+- #### tools
 
     - [sublime linting](https://medium.com/pvtl/linting-for-react-native-bdbb586ff694)
     - [sublime prettier](https://packagecontrol.io/packages/JsPrettier)
@@ -36,7 +57,15 @@
     npm i --save redux-saga
     ```
 
-#### run
+- #### clone
+
+    ```
+    git clone git@github.com:ethanneff/react-native-boilerplate.git
+    cd react-native-boilerplate
+    npm install
+    ```
+
+- #### run
 
     ```
     npm run app:ios
@@ -50,14 +79,19 @@
     npm run web
     ```
 
-#### test
+- #### test
 
     ```
     npm run app:test
     ```
 
-#### publish
+- #### publish
 
     ```
     npm run web:build
     ```
+
+## Resources
+
+    - scalability https://github.com/react-boilerplate/react-boilerplate
+    - multiple platform https://github.com/react-everywhere/re-start
