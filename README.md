@@ -2,29 +2,29 @@
 
 ## Purpose
 
-    - Code in one place, and your app will work in both mobile and web
+  - Code in one place, and your app will work in both mobile and web
 
 ## Vision
 
-    - Code reusability
-    - Simplicity
-        - Use `create-react-app` and `create-react-native-app` to handle dev environments
-        - No Webpack/Gulp/Grunt
-        - Github Pages web hosting
-    - Scalability
-        - Decoupled
-        - TDD
-        - Offline first
-        - DX
-        - Redux
-        - Component based hierarchy
+  - Code reusability
+  - Simplicity
+    - Use `create-react-app` and `create-react-native-app` to handle dev environments
+    - No Webpack/Gulp/Grunt
+    - Github Pages web hosting
+  - Scalability
+    - Decoupled
+    - TDD
+    - Offline first
+    - DX
+    - Redux
+    - Component based hierarchy
 
 ## Methodology
 
 - #### tools
 
-    - [sublime linting](https://medium.com/pvtl/linting-for-react-native-bdbb586ff694)
-    - [sublime prettier](https://packagecontrol.io/packages/JsPrettier)
+  - [sublime linting](https://medium.com/pvtl/linting-for-react-native-bdbb586ff694)
+  - [sublime prettier](https://packagecontrol.io/packages/JsPrettier)
 
     ```sh
     # dependencies (global)
@@ -93,5 +93,5 @@
 
 ## Resources
 
-    - scalability https://github.com/react-boilerplate/react-boilerplate
-    - multiple platform https://github.com/react-everywhere/re-start
+   - scalability https://github.com/react-boilerplate/react-boilerplate
+   - multiple platform https://github.com/react-everywhere/re-start
