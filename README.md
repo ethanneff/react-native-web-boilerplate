@@ -26,36 +26,36 @@
   - [sublime linting](https://medium.com/pvtl/linting-for-react-native-bdbb586ff694)
   - [sublime prettier](https://packagecontrol.io/packages/JsPrettier)
 
-    ```sh
-    # dependencies (global)
-    npm i -g yarn
-    # code quality (linting)
-    npm i --save-dev prettier
-    # debugging
-    npm i --save-dev react-devtools
-    npm i --save-dev remote-redux-devtools
-    # create react native app (mobile)
-    npm i --save react-native-scripts
-    npm i --save expo
-    npm i --save react
-    npm i --save-dev react-native-scripts
-    npm i --save-dev react-test-renderer
-    npm i --save-dev jest-expo
-    # create react app (web)
-    npm i --save react-native-web
-    npm i --save react-scripts
-    npm i --save react-dom
-    # navigation
-    npm i --save react-navigation
-    npm i --save react-router
-    # data and business logic (redux)
-    npm i --save prop-types
-    npm i --save immutable
-    npm i --save react-redux
-    npm i --save redux
-    npm i --save redux-immutable
-    npm i --save redux-saga
-    ```
+  ```sh
+  # dependencies (global)
+  npm i -g yarn
+  # code quality (linting)
+  npm i --save-dev prettier
+  # debugging
+  npm i --save-dev react-devtools
+  npm i --save-dev remote-redux-devtools
+  # create react native app (mobile)
+  npm i --save react-native-scripts
+  npm i --save expo
+  npm i --save react
+  npm i --save-dev react-native-scripts
+  npm i --save-dev react-test-renderer
+  npm i --save-dev jest-expo
+  # create react app (web)
+  npm i --save react-native-web
+  npm i --save react-scripts
+  npm i --save react-dom
+  # navigation
+  npm i --save react-navigation
+  npm i --save react-router
+  # data and business logic (redux)
+  npm i --save prop-types
+  npm i --save immutable
+  npm i --save react-redux
+  npm i --save redux
+  npm i --save redux-immutable
+  npm i --save redux-saga
+  ```
 
 - #### clone
 
