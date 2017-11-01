@@ -1,5 +1,7 @@
 # React Native Boilerplate for iOS, Android, and Web
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ethanneff/react-native-boilerplate.svg)](https://greenkeeper.io/)
+
 ## Purpose
 
   - Code in one place, and your app will work in both mobile and web
