@@ -13,8 +13,6 @@ before_install:
   - npm install -g greenkeeper-lockfile
 before_script:
   - greenkeeper-lockfile-update
-script:
-  - npm run app:test
 after_success:
   - npm run deploy
 after_script:
