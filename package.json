@@ -22,7 +22,7 @@
     "deploy": "gh-pages -d build"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
+    "src/**/*.{js,jsx,json,css}": ["prettier --write", "git add"]
   },
   "dependencies": {
     "expo": "^22.0.0",
