@@ -21,6 +21,50 @@
 
 ## Methodology
 
+- #### clone
+
+    ```
+    git clone git@github.com:ethanneff/react-native-boilerplate.git
+    cd react-native-boilerplate
+    npm install
+    ```
+
+- #### run
+
+    ```
+    npm run app:ios
+    ```
+
+    ```
+    npm run app:android
+    ```
+
+    ```
+    npm run web
+    ```
+
+- #### test
+
+    ```
+    npm run app:test
+    ```
+
+- #### publish
+
+    ```
+    npm run deploy
+    ```
+
+  - or merger into master (via TravisCI)
+
+## Resources
+
+- #### references
+
+   - scalability https://github.com/react-boilerplate/react-boilerplate
+   - multiple platforms https://github.com/react-everywhere/re-start
+   - example https://github.com/grigio/HAgnostic-News
+
 - #### tools
 
   - sublime linting https://medium.com/pvtl/linting-for-react-native-bdbb586ff694
@@ -61,44 +105,3 @@
   npm i --save redux-saga
   ```
 
-- #### clone
-
-    ```
-    git clone git@github.com:ethanneff/react-native-boilerplate.git
-    cd react-native-boilerplate
-    npm install
-    ```
-
-- #### run
-
-    ```
-    npm run app:ios
-    ```
-
-    ```
-    npm run app:android
-    ```
-
-    ```
-    npm run web
-    ```
-
-- #### test
-
-    ```
-    npm run app:test
-    ```
-
-- #### publish
-
-    ```
-    npm run deploy
-    ```
-
-  - or merger into master (via TravisCI)
-
-## Resources
-
-   - scalability https://github.com/react-boilerplate/react-boilerplate
-   - multiple platforms https://github.com/react-everywhere/re-start
-   - example https://github.com/grigio/HAgnostic-News
