@@ -75,33 +75,34 @@
   # dependencies (global)
   npm i -g yarn
   # code quality (linting)
-  npm i --save husky
-  npm i --save lint-staged
-  npm i --save prettier
+  yarn add -D husky
+  yarn add -D lint-staged
+  yarn add -D prettier
+  yarn add -D @commitlint/{config-angular,cli}
   # debugging
-  npm i --save-dev react-devtools
-  npm i --save-dev remote-redux-devtools
+  yarn add -D react-devtools
+  yarn add -D remote-redux-devtools
   # create react native app (mobile)
-  npm i --save react-native-scripts
-  npm i --save expo
-  npm i --save react
-  npm i --save-dev react-native-scripts
-  npm i --save-dev react-test-renderer
-  npm i --save-dev jest-expo
+  yarn add expo
+  yarn add react
+  yarn add -D react-native-scripts
+  yarn add -D react-native-scripts
+  yarn add -D react-test-renderer
+  yarn add -D jest-expo
   # create react app (web)
-  npm i --save react-native-web
-  npm i --save react-scripts
-  npm i --save react-dom
-  npm i --save gh-pages
+  yarn add react-dom
+  yarn add -D react-native-web
+  yarn add -D react-scripts
+  yarn add -D gh-pages
   # navigation
-  npm i --save react-navigation
-  npm i --save react-router
+  yarn add react-navigation
+  yarn add react-router
   # data and business logic (redux)
-  npm i --save prop-types
-  npm i --save immutable
-  npm i --save react-redux
-  npm i --save redux
-  npm i --save redux-immutable
-  npm i --save redux-saga
+  yarn add prop-types
+  yarn add immutable
+  yarn add react-redux
+  yarn add redux
+  yarn add redux-immutable
+  yarn add redux-saga
   ```
 
