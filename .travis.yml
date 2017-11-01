@@ -14,9 +14,16 @@ before_install:
 before_script:
   - greenkeeper-lockfile-update
 after_success:
-  - npm run deploy
+  - npm run web:build
 after_script:
   - greenkeeper-lockfile-upload
 branches:
   only:
     - master
+deploy:
+  provider: pages
+  local_dir: build
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  on:
+    branch: master
