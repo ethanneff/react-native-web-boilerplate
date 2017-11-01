@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
 
 const page = props => {
   return (
@@ -7,7 +7,7 @@ const page = props => {
       <Text>Open up App.js to start working on your app!</Text>
       <Text>Changes you make will automatically reload.</Text>
       <Text>Shake your phone to open the developer menu.</Text>
-      <Text>Test test</Text>
+      <Text>Test</Text>
     </View>
   );
 };
@@ -15,9 +15,9 @@ const page = props => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center"
   }
 });
 
