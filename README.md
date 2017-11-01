@@ -4,7 +4,7 @@
 
   - Code in one place, and your app will work in both mobile and web
 
-  ![image](https://i.imgur.com/sa5z3DR.gif)
+    ![image](https://i.imgur.com/sa5z3DR.gif)
 
 ## Vision
 
