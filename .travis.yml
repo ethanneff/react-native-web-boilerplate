@@ -1,6 +1,7 @@
 sudo: false
 language: node_js
 cache:
+  bundler: true
   directories:
     - node_modules
 notifications:
@@ -12,10 +13,12 @@ before_install:
   - npm install -g greenkeeper-lockfile
 before_script:
   - greenkeeper-lockfile-update
-after_script:
-  - greenkeeper-lockfile-upload
+script:
+  - npm app:test
 after_success:
   - npm run deploy
+after_script:
+  - greenkeeper-lockfile-upload
 branches:
   only:
     - master
