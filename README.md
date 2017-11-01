@@ -4,7 +4,7 @@
 
   - Fast development for all platforms
 
-  ![image](https://i.imgur.com/sa5z3DR.gif)
+    ![image](https://i.imgur.com/sa5z3DR.gif)
 
 ## Vision
 
