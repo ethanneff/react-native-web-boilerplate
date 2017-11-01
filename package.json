@@ -19,7 +19,8 @@
     "web:test": "react-scripts test --env=jsdom",
     "precommit": "lint-staged",
     "predeploy": "npm run web:build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "test": "node node_modules/jest/bin/jest.js"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": ["prettier --write", "git add"]

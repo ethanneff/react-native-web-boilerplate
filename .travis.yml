@@ -14,7 +14,7 @@ before_install:
 before_script:
   - greenkeeper-lockfile-update
 after_success:
-  - npm run deploy
+  - npm run web:build
 after_script:
   - greenkeeper-lockfile-upload
 branches:
@@ -24,5 +24,6 @@ deploy:
   local_dir: build
   provider: pages
   skip_cleanup: true
+  github_token: $GITHUB_TOKEN
   on:
     branch: master
