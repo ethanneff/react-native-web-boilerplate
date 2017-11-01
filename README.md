@@ -2,24 +2,24 @@
 
 ## Purpose
 
-  - Code in one place, and your app will work in both mobile and web
+  - Fast development for all platforms
 
   ![image](https://i.imgur.com/sa5z3DR.gif)
 
 ## Vision
 
   - Code reusability
+    - React Native everywhere
   - Simplicity
-    - Use `create-react-app` and `create-react-native-app` to handle dev environments
-    - No Webpack/Gulp/Grunt
-    - Github Pages web hosting
+    - No task managers (`create-react-app` and `create-react-native-app` instead of Webpack, Gulp, and Grunt)
+    - No web hosting (A static Github Page instead of a web service)
   - Scalability
     - Decoupled
     - TDD
     - Offline first
     - DX
     - Redux
-    - Component based hierarchy
+    - Component hierarchy (bottom-up development)
 
 ## Methodology
 
