@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://ethanneff.github.io/react-native-boilerplate",
   "devDependencies": {
+    "@commitlint/cli": "^4.2.2",
+    "@commitlint/config-angular": "^4.2.1",
     "jest-expo": "^22.0.0",
     "react-native-scripts": "1.6.0",
     "react-test-renderer": "16.0.0"
@@ -17,6 +19,7 @@
     "web": "react-scripts start",
     "web:build": "react-scripts build",
     "web:test": "react-scripts test --env=jsdom",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "lint-staged",
     "predeploy": "npm run web:build",
     "deploy": "gh-pages -d build",
@@ -25,6 +28,7 @@
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": ["prettier --write", "git add"]
   },
+  "commitlint": { "extends": ["@commitlint/config-angular"] },
   "jest": {
     "preset": "jest-expo"
   },
