@@ -1,7 +1,5 @@
 # React Native Boilerplate for iOS, Android, and Web
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/ethanneff/react-native-boilerplate.svg)](https://greenkeeper.io/)
-
 ## Purpose
 
   - Code in one place, and your app will work in both mobile and web
@@ -33,7 +31,9 @@
   # dependencies (global)
   npm i -g yarn
   # code quality (linting)
-  npm i --save-dev prettier
+  npm i --save husky
+  npm i --save lint-staged
+  npm i --save prettier
   # debugging
   npm i --save-dev react-devtools
   npm i --save-dev remote-redux-devtools
@@ -98,4 +98,5 @@
 ## Resources
 
    - scalability https://github.com/react-boilerplate/react-boilerplate
-   - multiple platform https://github.com/react-everywhere/re-start
+   - multiple platforms https://github.com/react-everywhere/re-start
+   - example https://github.com/grigio/HAgnostic-News
