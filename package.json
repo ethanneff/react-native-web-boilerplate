@@ -25,6 +25,9 @@
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": ["prettier --write", "git add"]
   },
+  "jest": {
+    "preset": "jest-expo"
+  },
   "dependencies": {
     "expo": "^22.0.0",
     "gh-pages": "^1.0.0",
