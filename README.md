@@ -95,6 +95,8 @@
     npm run deploy
     ```
 
+  - or merger into master (via TravisCI)
+
 ## Resources
 
    - scalability https://github.com/react-boilerplate/react-boilerplate
