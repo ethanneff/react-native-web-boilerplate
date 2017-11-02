@@ -23,6 +23,15 @@
 
 ## Methodology
 
+- #### todo
+
+  - [ ] navigation
+  - [ ] reducer injector
+  - [ ] saga injector
+  - [ ] TDD
+  - [ ] Component example
+  - [ ] Handle desktop
+
 - #### clone
 
     ```
