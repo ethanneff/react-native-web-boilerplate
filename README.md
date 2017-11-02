@@ -14,6 +14,24 @@
   </a>
 </div>
 
+## Status
+
+  - Stable, but work in progress
+    - [x] android
+    - [x] ios
+    - [x] web
+    - [x] github pages
+    - [x] testing framework
+    - [x] linting
+    - [x] continuous integration
+    - [ ] navigation
+    - [ ] reducer injector
+    - [ ] saga injector
+    - [ ] test driven development
+    - [ ] component example
+    - [ ] desktop sizing
+    - [ ] development flow documentation
+
 ## Purpose
 
   - Fast development for all platforms
@@ -36,16 +54,6 @@
     - Component hierarchy (bottom-up development)
 
 ## Methodology
-
-- #### todo
-
-  - [ ] navigation
-  - [ ] reducer injector
-  - [ ] saga injector
-  - [ ] test driven development
-  - [ ] Component example
-  - [ ] Handle desktop
-  - [ ] documentation on development flow
 
 - #### clone
 
