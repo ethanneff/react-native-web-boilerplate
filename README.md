@@ -1,5 +1,20 @@
 # React Native Boilerplate for iOS, Android, and Web
 
+<div align="center">
+  <a href="https://david-dm.org/ethanneff/react-native-boilerplate">
+    <img src="https://david-dm.org/ethanneff/react-native-boilerplate.svg" alt="Dependency Status" />
+  </a>
+  <a href="https://david-dm.org/ethanneff/react-native-boilerplate#info=devDependencies">
+    <img src="https://david-dm.org/ethanneff/react-native-boilerplate/dev-status.svg" alt="devDependency Status" />
+  </a>
+  <a href="https://travis-ci.org/ethanneff/react-native-boilerplate">
+    <img src="https://travis-ci.org/ethanneff/react-native-boilerplate.svg" alt="Build Status" />
+  </a>
+  <a href="https://coveralls.io/r/ethanneff/react-native-boilerplate">
+    <img src="https://coveralls.io/repos/github/ethanneff/react-native-boilerplate/badge.svg" alt="Test Coverage" />
+  </a>
+</div>
+
 ## Purpose
 
   - Fast development for all platforms
