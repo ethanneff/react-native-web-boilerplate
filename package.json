@@ -31,7 +31,7 @@
     "predeploy": "npm run web:build",
     "deploy": "gh-pages -d build",
     "test":
-      "node --harmony_proxies node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+      "node node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "testing": "node node_modules/jest/bin/jest.js --watch"
   },
   "lint-staged": {
