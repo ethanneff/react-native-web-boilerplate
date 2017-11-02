@@ -42,9 +42,10 @@
   - [ ] navigation
   - [ ] reducer injector
   - [ ] saga injector
-  - [ ] TDD
+  - [ ] test driven development
   - [ ] Component example
   - [ ] Handle desktop
+  - [ ] documentation on development flow
 
 - #### clone
 
