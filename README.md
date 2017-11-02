@@ -1,6 +1,5 @@
-# React Native Boilerplate for iOS, Android, and Web
-
 <div align="center">
+  <h1>React Native Boilerplate for iOS, Android, and Web</h1>
   <a href="https://david-dm.org/ethanneff/react-native-boilerplate">
     <img src="https://david-dm.org/ethanneff/react-native-boilerplate.svg" alt="Dependency Status" />
   </a>
