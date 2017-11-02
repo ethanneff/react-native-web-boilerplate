@@ -41,8 +41,7 @@
     "extends": ["@commitlint/config-angular"]
   },
   "jest": {
-    "preset": "react-native",
-    "verbose": true
+    "preset": "react-native"
   },
   "dependencies": {
     "expo": "^22.0.0",
