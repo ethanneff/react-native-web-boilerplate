@@ -1,29 +1,41 @@
 sudo: false
+
 language: node_js
+
+node_js:
+  - 7
+  - 6
+  - 5
+
 cache:
-  bundler: true
+  yarn: true
   directories:
     - node_modules
+ 
 notifications:
   email: false
-node_js:
-  - '6'
+
 before_install:
   - npm install -g npm@5
   - npm install -g greenkeeper-lockfile
+
 before_script:
   - greenkeeper-lockfile-update
+
 after_success:
   - npm run web:build
+
 after_script:
   - greenkeeper-lockfile-upload
+
 branches:
   only:
     - master
+  
 deploy:
   provider: pages
   local_dir: build
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+  github_token: $GITHUB_TOKEN
   on:
     branch: master
