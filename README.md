@@ -104,6 +104,7 @@
   yarn add -D lint-staged
   yarn add -D prettier
   yarn add -D @commitlint/{config-angular,cli}
+  yarn add -D coveralls
   # debugging
   yarn add -D react-devtools
   yarn add -D remote-redux-devtools

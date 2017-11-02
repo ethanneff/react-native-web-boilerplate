@@ -11,7 +11,7 @@ cache:
   yarn: true
   directories:
     - node_modules
- 
+
 notifications:
   email: false
 
@@ -23,7 +23,8 @@ before_script:
   - greenkeeper-lockfile-update
 
 after_success:
-  - npm run web:build
+  - npm run build
+  - npm run coveralls
 
 after_script:
   - greenkeeper-lockfile-upload
@@ -31,7 +32,7 @@ after_script:
 branches:
   only:
     - master
-  
+
 deploy:
   provider: pages
   local_dir: build
