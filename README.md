@@ -66,27 +66,27 @@
 - #### run
 
     ```
-    npm run app:ios
+    yarn ios
     ```
 
     ```
-    npm run app:android
+    yarn android
     ```
 
     ```
-    npm run web
+    yarn web
     ```
 
 - #### test
 
     ```
-    npm run app:test
+    yarn testing
     ```
 
 - #### publish
 
     ```
-    npm run deploy
+    yarn deploy
     ```
 
   - or merger into master (via TravisCI)
@@ -141,3 +141,14 @@
   yarn add redux-saga
   ```
 
+- #### reset
+
+    ```sh
+    watchman watch-del-all
+    rm -rf ./node_modules
+    rm -rf $TMPDIR/react-*
+    npm cache clean
+    yarn cache clean
+    yarn install
+    yarn start --reset-cache
+    ```
