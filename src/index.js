@@ -1,7 +1,7 @@
 // web entry
-import App from "./components/App";
 import { AppRegistry } from "react-native";
-import registerServiceWorker from "./web/registerServiceWorker";
+import App from "./containers/app";
+import registerServiceWorker from "./common/web/registerServiceWorker";
 
 AppRegistry.registerComponent("App", () => App);
 AppRegistry.runApplication("App", { rootTag: document.getElementById("root") });
