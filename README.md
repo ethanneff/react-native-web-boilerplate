@@ -27,6 +27,7 @@
     - [x] navigation
     - [ ] status bar handler
     - [ ] redux
+    - [ ] fix testing (routing broke it)
     - [ ] reducer injector
     - [ ] saga injector
     - [ ] test driven development
@@ -132,8 +133,8 @@
   yarn add -D react-scripts
   yarn add -D gh-pages
   # navigation
-  yarn add react-navigation
-  yarn add react-router
+  yarn add react-router-dom
+  yarn add react-router-native
   # data and business logic (redux)
   yarn add prop-types
   yarn add immutable
