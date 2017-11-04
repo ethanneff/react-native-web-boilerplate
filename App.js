@@ -1,3 +1,2 @@
 // app entry
-import App from "./src/components/App";
-export default App;
+export default from "./src/containers/app";
