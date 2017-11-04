@@ -24,7 +24,9 @@
     - [x] testing framework
     - [x] linting
     - [x] continuous integration
-    - [ ] navigation
+    - [x] navigation
+    - [ ] status bar handler
+    - [ ] redux
     - [ ] reducer injector
     - [ ] saga injector
     - [ ] test driven development
@@ -142,6 +144,13 @@
   ```
 
 - #### reset
+    
+    - whenever you update dependencies
+
+    ```sh
+    watchman watch-del-all
+    yarn start --reset-cache
+    ```
 
     ```sh
     watchman watch-del-all
