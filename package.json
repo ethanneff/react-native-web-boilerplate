@@ -14,16 +14,14 @@
     "react-devtools": "^2.5.2",
     "jest-expo": "^22.0.0",
     "prettier": "^1.7.4",
-    "react-native-scripts": "^1.7.0",
     "react-scripts": "^1.0.17",
     "react-test-renderer": "^16.0.0",
     "remote-redux-devtools": "^0.5.12"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
+    "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
     "web": "react-scripts start",
     "build": "react-scripts build",
     "commitmsg": "commitlint -e $GIT_PARAMS",
@@ -48,7 +46,6 @@
     "preset": "react-native"
   },
   "dependencies": {
-    "expo": "^22.0.0",
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
