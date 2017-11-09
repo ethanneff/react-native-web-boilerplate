@@ -145,7 +145,7 @@
   ```
 
 - #### reset
-    
+
     - whenever you update dependencies
 
     ```sh
@@ -161,4 +161,11 @@
     yarn cache clean
     yarn install
     yarn start --reset-cache
+    ```
+
+    - no bundle url present
+
+    ```sh
+    rm -rf ./ios/build
+    yarn ios
     ```
