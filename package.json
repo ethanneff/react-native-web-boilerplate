@@ -12,7 +12,7 @@
     "jest-expo": "^22.0.1",
     "lint-staged": "^4.3.0",
     "prettier": "^1.8.1",
-    "react-devtools": "^2.5.2",
+    "react-devtools": "^3.0.0",
     "react-scripts": "^1.0.17",
     "react-test-renderer": "^16.0.0",
     "remote-redux-devtools": "^0.5.12"
