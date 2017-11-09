@@ -1,1 +1,2 @@
-export default from "./common";
+import main from "./common";
+export default main;

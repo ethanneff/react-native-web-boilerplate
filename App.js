@@ -1,2 +1,3 @@
 // app entry
-export default from "./src/containers/app";
+import main from "./src/containers/app";
+export default main;
