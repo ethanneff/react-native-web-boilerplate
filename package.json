@@ -45,7 +45,8 @@
     "preset": "react-native",
     "transformIgnorePatterns": [
       "node_modules/(?!react-native|react-router-native)/"
-    ]
+    ],
+    "testEnvironment": "jsdom"
   },
   "dependencies": {
     "prop-types": "^15.6.0",
