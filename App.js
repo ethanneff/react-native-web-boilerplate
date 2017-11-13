@@ -1,3 +1,3 @@
 // app entry
-import main from "./src/containers/app";
+import main from "./src";
 export default main;
