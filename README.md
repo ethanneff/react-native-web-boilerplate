@@ -16,35 +16,22 @@
 
 ## Purpose
 
-* Fast development for all platforms
-
-  ![image](https://i.imgur.com/sa5z3DR.gif)
+* Faster development for all platforms ![image](https://i.imgur.com/sa5z3DR.gif)
 
 ## Vision
 
 * Code re-usability
-
   * React Native everywhere
-
 * Simplicity
-
   * No task managers (`create-react-app` and `create-react-native-app` instead
     of Webpack, Gulp, and Grunt)
-
-- No web hosting (A static Github Page instead of a web service)
-
-- Scalability
-
+* No web hosting (A static Github Page instead of a web service)
+* Scalability
   * Decoupled
-
   * TDD
-
   * Offline first
-
   * DX
-
   * Redux
-
   * Component hierarchy (bottom-up development)
 
 ## Methodology
@@ -124,16 +111,13 @@
 * #### references
 
   * scalability https://github.com/react-boilerplate/react-boilerplate
-
   * multiple platforms https://github.com/react-everywhere/re-start
-
   * example https://github.com/grigio/HAgnostic-News
 
 * #### tools
 
   * sublime linting
     https://medium.com/pvtl/linting-for-react-native-bdbb586ff694
-
   * sublime prettier https://packagecontrol.io/packages/JsPrettier
 
     ```sh
