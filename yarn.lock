@@ -5109,7 +5109,7 @@ lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
 
-"lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.16.6, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.1:
+"lodash@>=3.5 <5", lodash@^4.0.0, lodash@^4.14.0, lodash@^4.15.0, lodash@^4.16.6, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.2.0, lodash@^4.2.1, lodash@^4.3.0, lodash@^4.6.1, lodash@^4.x:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
@@ -6953,11 +6953,30 @@ redux-devtools-instrument@^1.3.3:
     lodash "^4.2.0"
     symbol-observable "^1.0.2"
 
+redux-reducers-injector@^0.1.0, redux-reducers-injector@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/redux-reducers-injector/-/redux-reducers-injector-0.1.1.tgz#eab9a0dd4b118148bf76f5947ff57877f253f6e9"
+  dependencies:
+    lodash "^4.x"
+    redux "^3.x"
+
+redux-saga@^0.15.6:
+  version "0.15.6"
+  resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-0.15.6.tgz#8638dc522de6c6c0a496fe8b2b5466287ac2dc4d"
+
 redux-saga@^0.16.0:
   version "0.16.0"
   resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-0.16.0.tgz#0a231db0a1489301dd980f6f2f88d8ced418f724"
 
-redux@^3.7.2:
+redux-sagas-injector@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/redux-sagas-injector/-/redux-sagas-injector-0.2.2.tgz#46c9b28d88f08f86dff23ac368378bf4c264adf8"
+  dependencies:
+    redux "^3.x"
+    redux-reducers-injector "^0.1.0"
+    redux-saga "^0.15.6"
+
+redux@^3.7.2, redux@^3.x:
   version "3.7.2"
   resolved "https://registry.yarnpkg.com/redux/-/redux-3.7.2.tgz#06b73123215901d25d065be342eb026bc1c8537b"
   dependencies:

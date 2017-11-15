@@ -17,6 +17,7 @@
 ## Status
 
 * Stable, but work in progress
+
   * [x] android
   * [x] ios
   * [x] web
@@ -26,13 +27,22 @@
   * [x] continuous integration
   * [x] navigation
   * [ ] status bar handler
-  * [ ] redux
-  * [ ] reducer injector
-  * [ ] saga injector
+  * [x] redux
+  * [ ] router redux
+  * [x] reducer injector
+  * [x] saga injector
   * [ ] test driven development
   * [ ] component example
   * [ ] desktop sizing
   * [ ] development flow documentation
+
+* Additional
+
+  * remove all `// TODO:`
+  * fix react router redux
+    https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/guides/redux.md
+  * update redux saga injector
+    https://github.com/GuillaumeCisco/redux-sagas-injector/pull/3
 
 ## Purpose
 
@@ -42,18 +52,29 @@
 
 ## Vision
 
-* Code reusability
+* Code re-usability
+
   * React Native everywhere
+
 * Simplicity
+
   * No task managers (`create-react-app` and `create-react-native-app` instead
     of Webpack, Gulp, and Grunt)
-  * No web hosting (A static Github Page instead of a web service)
-* Scalability
+
+- No web hosting (A static Github Page instead of a web service)
+
+- Scalability
+
   * Decoupled
+
   * TDD
+
   * Offline first
+
   * DX
+
   * Redux
+
   * Component hierarchy (bottom-up development)
 
 ## Methodology
@@ -86,6 +107,10 @@
   yarn testing
   ```
 
+  ```
+  http://remotedev.io/local/
+  ```
+
 * #### publish
 
   ```
@@ -99,13 +124,16 @@
 * #### references
 
   * scalability https://github.com/react-boilerplate/react-boilerplate
+
   * multiple platforms https://github.com/react-everywhere/re-start
+
   * example https://github.com/grigio/HAgnostic-News
 
 * #### tools
 
   * sublime linting
     https://medium.com/pvtl/linting-for-react-native-bdbb586ff694
+
   * sublime prettier https://packagecontrol.io/packages/JsPrettier
 
     ```sh
@@ -137,11 +165,14 @@
     yarn add react-router-native
     # data and business logic (redux)
     yarn add prop-types
-    yarn add immutable
     yarn add react-redux
     yarn add redux
-    yarn add redux-immutable
     yarn add redux-saga
+    yarn add redux-reducers-injector
+    yarn add redux-sagas-injector
+    # soon
+    yarn add immutable
+    yarn add redux-immutable
     ```
 
 * #### reset
