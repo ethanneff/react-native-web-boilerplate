@@ -14,36 +14,6 @@
   </a>
 </div>
 
-## Status
-
-* Stable, but work in progress
-
-  * [x] android
-  * [x] ios
-  * [x] web
-  * [x] github pages
-  * [x] testing framework
-  * [x] linting
-  * [x] continuous integration
-  * [x] navigation
-  * [ ] status bar handler
-  * [x] redux
-  * [ ] router redux
-  * [x] reducer injector
-  * [x] saga injector
-  * [ ] test driven development
-  * [ ] component example
-  * [ ] desktop sizing
-  * [ ] development flow documentation
-
-* Additional
-
-  * remove all `// TODO:`
-  * fix react router redux
-    https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/guides/redux.md
-  * update redux saga injector
-    https://github.com/GuillaumeCisco/redux-sagas-injector/pull/3
-
 ## Purpose
 
 * Fast development for all platforms
@@ -118,6 +88,36 @@
   ```
 
   * or merger into master (via TravisCI)
+
+## Status
+
+* Stable, but work in progress
+
+  * [x] android
+  * [x] ios
+  * [x] web
+  * [x] github pages
+  * [x] testing framework
+  * [x] linting
+  * [x] continuous integration
+  * [x] navigation
+  * [ ] status bar handler
+  * [x] redux
+  * [ ] router redux
+  * [x] reducer injector
+  * [x] saga injector
+  * [ ] test driven development
+  * [ ] component example
+  * [ ] desktop sizing
+  * [ ] development flow documentation
+
+* Additional
+
+  * remove all `// TODO:`
+  * fix react router redux
+    https://github.com/ReactTraining/react-router/blob/master/packages/react-router/docs/guides/redux.md
+  * update redux saga injector
+    https://github.com/GuillaumeCisco/redux-sagas-injector/pull/3
 
 ## Resources
 
