@@ -48,6 +48,18 @@
     ],
     "testEnvironment": "jsdom"
   },
+  "babel": {
+    "presets": [
+      "react-native"
+    ],
+    "env": {
+      "development": {
+        "plugins": [
+          "transform-react-jsx-source"
+        ]
+      }
+    }
+  },
   "dependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
