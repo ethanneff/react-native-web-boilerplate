@@ -7,5 +7,6 @@ export {
   BrowserRouter as Router,
   Link,
   Route,
-  Redirect
+  Redirect,
+  Switch
 } from "react-router-dom";

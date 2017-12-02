@@ -3,5 +3,6 @@ export {
   AndroidBackButton,
   Link,
   Route,
-  Redirect
+  Redirect,
+  Switch
 } from "react-router-native";

@@ -1,5 +1,13 @@
 import * as constants from "./constants";
 
+const delay = action => {
+  return (dispatch, getState) => {
+    setTimeout(() => {
+      dispatch(action);
+    }, 1000);
+  };
+};
+
 export const increment = () => {
   return {
     type: constants.increment
@@ -20,15 +28,11 @@ export const decrement = () => {
 };
 
 export const decrementAsync = () => {
-  return {
-    type: constants.decrementAsync
-  };
+  return delay(decrement());
 };
 
-export const incrementAsync = () => {
-  return {
-    type: constants.incrementAsync
-  };
+export const incrementAsync = value => {
+  return delay(incrementValue(value));
 };
 
 export const incrementIfOdd = () => {
