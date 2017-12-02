@@ -65,7 +65,9 @@
   ```
 
   ```
+  http://localhost:3000
   http://remotedev.io/local/
+  http://localhost:8081/debugger-ui/
   ```
 
 * #### publish
@@ -147,6 +149,8 @@
     # navigation
     yarn add react-router-dom
     yarn add react-router-native
+    yarn add react-router-redux@next
+    yard add history
     # data and business logic (redux)
     yarn add prop-types
     yarn add react-redux
