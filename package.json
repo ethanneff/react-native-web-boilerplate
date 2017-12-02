@@ -4,17 +4,17 @@
   "private": true,
   "homepage": "https://ethanneff.github.io/react-native-boilerplate",
   "devDependencies": {
-    "@commitlint/cli": "^4.3.0",
-    "@commitlint/config-angular": "^4.3.0",
+    "@commitlint/cli": "^5.2.0",
+    "@commitlint/config-angular": "^5.1.1",
     "coveralls": "^3.0.0",
-    "gh-pages": "^1.0.0",
+    "gh-pages": "^1.1.0",
     "husky": "^0.14.3",
-    "jest-expo": "^22.0.1",
-    "lint-staged": "^5.0.0",
-    "prettier": "^1.8.1",
+    "jest-expo": "^23.0.1",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.8.2",
     "react-devtools": "^3.0.0",
     "react-scripts": "^1.0.17",
-    "react-test-renderer": "^16.0.0",
+    "react-test-renderer": "^16.2.0",
     "remote-redux-devtools": "^0.5.12"
   },
   "scripts": {
@@ -62,13 +62,14 @@
   },
   "dependencies": {
     "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-native": "^0.50.3",
-    "react-native-web": "^0.1.13",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-native": "^0.50.4",
+    "react-native-web": "^0.1.14",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "react-router-native": "^4.2.0",
+    "react-router-redux": "^5.0.0-alpha.8",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0"
   }
