@@ -1,36 +1,26 @@
-import { applyMiddleware } from "redux";
+import { createStore, applyMiddleware, combineReducers } from "redux";
 import { composeWithDevTools } from "remote-redux-devtools";
-import { createInjectSagasStore, sagaMiddleware } from "redux-sagas-injector";
+import thunk from "redux-thunk";
 
-import { put, takeEvery } from "redux-saga/effects";
-import { delay } from "redux-saga";
-
-function* incrementAsync() {
-  yield delay(1000);
-  yield put({ type: "INCREMENT" });
-}
-
-function* rootSaga() {
-  yield takeEvery("INCREMENT_ASYNC", incrementAsync);
-}
-
-const rootReducer = {
-  app: (state = {}, action) => {
-    switch (action.type) {
-      case true:
-        return action;
-      default:
-        return state;
-    }
-  }
+const rootReducer = (state = {}, action) => {
+  return state;
 };
-const initialState = {};
-const enhancers = [applyMiddleware(sagaMiddleware)];
-const store = createInjectSagasStore(
-  { rootSaga: rootSaga },
-  rootReducer,
-  initialState,
-  composeWithDevTools(...enhancers)
-);
 
-export default store;
+const createReducer = reducers => {
+  return combineReducers({
+    rootReducer,
+    ...reducers
+  });
+};
+
+const enhancers = [applyMiddleware(thunk)];
+const store = createStore(createReducer(), composeWithDevTools(...enhancers));
+store.reducers = {};
+
+const injectReducer = (name, reducer) => {
+  store.reducers[name] = reducer;
+  store.replaceReducer(createReducer(store.reducers));
+  console.log(store.getState());
+};
+
+export { store, injectReducer };

@@ -70,8 +70,6 @@
     "react-router-dom": "^4.2.2",
     "react-router-native": "^4.2.0",
     "redux": "^3.7.2",
-    "redux-reducers-injector": "^0.1.1",
-    "redux-saga": "^0.16.0",
-    "redux-sagas-injector": "^0.2.2"
+    "redux-thunk": "^2.2.0"
   }
 }

@@ -151,9 +151,7 @@
     yarn add prop-types
     yarn add react-redux
     yarn add redux
-    yarn add redux-saga
-    yarn add redux-reducers-injector
-    yarn add redux-sagas-injector
+    yarn add redux-thunk
     # soon
     yarn add immutable
     yarn add redux-immutable
