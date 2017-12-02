@@ -20,7 +20,6 @@ store.reducers = {};
 const injectReducer = (name, reducer) => {
   store.reducers[name] = reducer;
   store.replaceReducer(createReducer(store.reducers));
-  console.log(store.getState());
 };
 
 export { store, injectReducer };
