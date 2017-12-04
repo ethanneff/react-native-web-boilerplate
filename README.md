@@ -94,7 +94,6 @@
   * [x] redux
   * [ ] router redux
   * [x] reducer injector
-  * [x] saga injector
   * [ ] test driven development
   * [ ] component example
   * [ ] desktop sizing
