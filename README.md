@@ -99,6 +99,8 @@
   * [ ] component example
   * [ ] desktop sizing
   * [ ] development flow documentation
+  * [ ] fix routing again
+  * [ ] fix ios console errors
 
 * Additional
 
