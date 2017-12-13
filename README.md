@@ -100,6 +100,7 @@
   * [ ] development flow documentation
   * [ ] fix routing again
   * [ ] fix ios console errors
+  * [ ] figure out semantic release
 
 * Additional
 
