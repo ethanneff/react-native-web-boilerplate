@@ -17,8 +17,7 @@ notifications:
   email: false
 
 after_success:
-  - npm run build
-  - npm run coveralls
+  - npm run deploy
   - npm run semantic-release
 
 branches:
