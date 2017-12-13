@@ -43,6 +43,11 @@
       "@commitlint/config-conventional"
     ]
   },
+  "release": {
+    "verifyConditions": ["@semantic-release/condition-travis", "@semantic-release/git", "@semantic-release/github"],
+    "getLastRelease": "@semantic-release/git",
+    "publish": ["@semantic-release/git", "@semantic-release/github"]
+  },
   "jest": {
     "preset": "react-native",
     "transformIgnorePatterns": [
