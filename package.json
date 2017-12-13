@@ -26,7 +26,7 @@
     "build": "react-scripts build",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "precommit": "lint-staged",
-    "predeploy": "npm run web:build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "node node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "testing": "node node_modules/jest/bin/jest.js --watch",
