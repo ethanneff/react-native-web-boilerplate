@@ -130,7 +130,8 @@
     yarn add -D husky
     yarn add -D lint-staged
     yarn add -D prettier
-    yarn add -D @commitlint/{config-angular,cli}
+    yarn add -D @commitlint/{config-conventional,cli}
+    yarn add -D semantic-release
     yarn add -D coveralls
     # debugging
     yarn add -D react-devtools

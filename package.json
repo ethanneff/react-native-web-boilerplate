@@ -1,6 +1,6 @@
 {
   "name": "rnb",
-  "version": "0.2.2",
+  "version": "0.0.0-development",
   "private": true,
   "homepage": "https://ethanneff.github.io/react-native-boilerplate",
   "devDependencies": {
@@ -16,7 +16,7 @@
     "react-scripts": "^1.0.17",
     "react-test-renderer": "^16.2.0",
     "remote-redux-devtools": "^0.5.12",
-    "standard-version": "^4.2.0"
+    "semantic-release": "^8.2.0"
   },
   "scripts": {
     "start": "react-native start",
@@ -30,7 +30,7 @@
     "deploy": "gh-pages -d build",
     "test": "node node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "testing": "node node_modules/jest/bin/jest.js --watch",
-    "release": "standard-version --no-verify"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
@@ -74,5 +74,9 @@
     "react-router-redux": "^5.0.0-alpha.8",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ethanneff/react-native-boilerplate.git"
   }
 }
