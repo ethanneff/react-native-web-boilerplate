@@ -166,6 +166,13 @@
 
 * #### reset
 
+  * update dependencies
+    
+    ```sh
+    npm i -g npm-check-updates
+    ncu -u
+    ```
+
   * whenever you update dependencies
 
     ```sh
