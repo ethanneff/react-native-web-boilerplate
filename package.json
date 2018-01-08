@@ -71,7 +71,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-native": "^0.51.0",
+    "react-native": "^0.52.0",
     "react-native-web": "^0.3.0-rc.4",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
