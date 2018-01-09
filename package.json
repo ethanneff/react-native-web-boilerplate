@@ -4,14 +4,14 @@
   "private": true,
   "homepage": "https://ethanneff.github.io/react-native-boilerplate",
   "devDependencies": {
-    "@commitlint/cli": "^5.2.5",
+    "@commitlint/cli": "^5.2.8",
     "@commitlint/config-conventional": "^5.2.3",
     "coveralls": "^3.0.0",
     "gh-pages": "^1.1.0",
     "husky": "^0.14.3",
     "jest-expo": "^24.0.0",
     "lint-staged": "^6.0.0",
-    "prettier": "^1.8.2",
+    "prettier": "^1.9.2",
     "react-devtools": "^3.0.0",
     "react-scripts": "^1.0.17",
     "react-test-renderer": "^16.2.0",
@@ -44,9 +44,16 @@
     ]
   },
   "release": {
-    "verifyConditions": ["@semantic-release/condition-travis", "@semantic-release/git", "@semantic-release/github"],
+    "verifyConditions": [
+      "@semantic-release/condition-travis",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ],
     "getLastRelease": "@semantic-release/git",
-    "publish": ["@semantic-release/git", "@semantic-release/github"]
+    "publish": [
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
   },
   "jest": {
     "preset": "react-native",
@@ -71,7 +78,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-native": "^0.51.0",
+    "react-native": "^0.52.0",
     "react-native-web": "^0.3.0-rc.4",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",

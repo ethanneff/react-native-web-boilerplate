@@ -170,7 +170,10 @@
     
     ```sh
     npm i -g npm-check-updates
-    ncu -u
+    ncu -a
+    rm -rf ./ios/build
+    yarn upgrade
+    npm update
     ```
 
   * whenever you update dependencies
