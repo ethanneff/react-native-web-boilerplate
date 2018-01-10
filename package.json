@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://ethanneff.github.io/react-native-boilerplate",
   "devDependencies": {
-    "@commitlint/cli": "^5.2.8",
+    "@commitlint/cli": "^6.0.0",
     "@commitlint/config-conventional": "^5.2.3",
     "coveralls": "^3.0.0",
     "gh-pages": "^1.1.0",
