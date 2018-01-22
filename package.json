@@ -4,19 +4,19 @@
   "private": true,
   "homepage": "https://ethanneff.github.io/react-native-boilerplate",
   "devDependencies": {
-    "@commitlint/cli": "^5.2.8",
-    "@commitlint/config-conventional": "^5.2.3",
+    "@commitlint/cli": "^6.0.2",
+    "@commitlint/config-conventional": "^6.0.2",
     "coveralls": "^3.0.0",
     "gh-pages": "^1.1.0",
     "husky": "^0.14.3",
-    "jest-expo": "^24.0.0",
+    "jest-expo": "^25.0.0",
     "lint-staged": "^6.0.0",
     "prettier": "^1.9.2",
     "react-devtools": "^3.0.0",
     "react-scripts": "^1.0.17",
     "react-test-renderer": "^16.2.0",
     "remote-redux-devtools": "^0.5.12",
-    "semantic-release": "^11.0.2"
+    "semantic-release": "^12.2.4"
   },
   "scripts": {
     "start": "react-native start",
@@ -28,20 +28,17 @@
     "precommit": "lint-staged",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "test": "node node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test":
+      "node node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "testing": "node node_modules/jest/bin/jest.js --watch",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release":
+      "semantic-release pre && npm publish && semantic-release post"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
-      "prettier --write",
-      "git add"
-    ]
+    "src/**/*.{js,jsx,json,css}": ["prettier --write", "git add"]
   },
   "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
+    "extends": ["@commitlint/config-conventional"]
   },
   "release": {
     "verifyConditions": [
@@ -50,10 +47,7 @@
       "@semantic-release/github"
     ],
     "getLastRelease": "@semantic-release/git",
-    "publish": [
-      "@semantic-release/git",
-      "@semantic-release/github"
-    ]
+    "publish": ["@semantic-release/git", "@semantic-release/github"]
   },
   "jest": {
     "preset": "react-native",
@@ -63,14 +57,10 @@
     "testEnvironment": "jsdom"
   },
   "babel": {
-    "presets": [
-      "react-native"
-    ],
+    "presets": ["react-native"],
     "env": {
       "development": {
-        "plugins": [
-          "transform-react-jsx-source"
-        ]
+        "plugins": ["transform-react-jsx-source"]
       }
     }
   },
@@ -78,7 +68,7 @@
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-native": "^0.52.0",
+    "react-native": "0.52.1",
     "react-native-web": "^0.3.0-rc.4",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",

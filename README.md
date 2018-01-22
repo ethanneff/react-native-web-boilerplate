@@ -167,21 +167,25 @@
 * #### reset
 
   * update dependencies
-    
+
     ```sh
-    npm i -g npm-check-updates
+    npm i -g yarn npm-check-updates depcheck react-native-git-upgrade
+    depcheck
     ncu -a
+    rm -rf ~/.rncache/
     rm -rf ./ios/build
+    watchman watch-del-all
     yarn upgrade
     npm update
-    ```
-
-  * whenever you update dependencies
-
-    ```sh
-    watchman watch-del-all
+    react-native-git-upgrade
+    react-native upgrade
     yarn start --reset-cache
+    yarn ios
+    yarn web
+    yarn test
     ```
+
+  * whenever you update dependencies (optional)
 
     ```sh
     watchman watch-del-all
@@ -199,3 +203,7 @@
     rm -rf ./ios/build
     yarn ios
     ```
+
+  * Print: Entry, ":CFBundleIdentifier", Does Not Exist
+
+    * make sure nothing is running on port :8080
