@@ -101,6 +101,7 @@
   * [ ] fix routing again
   * [ ] fix ios console errors
   * [ ] figure out semantic release
+  * [ ] add flow type
 
 * Additional
 
