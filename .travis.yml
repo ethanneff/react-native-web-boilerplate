@@ -17,8 +17,8 @@ notifications:
   email: false
 
 after_success:
-  - npm run deploy # // TODO: is this redundant from below, also do i need to add back npm run coveralls?
-  - npm run semantic-release
+  - yarn deploy # // TODO: is this redundant from below, also do i need to add back npm run coveralls?
+  - yarn semantic-release
 
 branches:
   only:
