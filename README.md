@@ -128,12 +128,12 @@
     # dependencies (global)
     npm i -g yarn
     # code quality (linting)
-    yarn add -D husky
-    yarn add -D lint-staged
-    yarn add -D prettier
-    yarn add -D @commitlint/{config-conventional,cli}
-    yarn add -D semantic-release
-    yarn add -D coveralls
+    yarn add -D husky # pre github hooks
+    yarn add -D lint-staged # auto format hook
+    yarn add -D prettier # format
+    yarn add -D @commitlint/{config-conventional,cli} # forced commit messages
+    yarn add -D semantic-release # auto release version
+    yarn add -D coveralls # testing
     # debugging
     yarn add -D react-devtools
     yarn add -D remote-redux-devtools

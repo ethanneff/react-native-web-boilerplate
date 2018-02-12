@@ -5,3 +5,4 @@ build/
 coverage/
 yarn-error.*
 npm-debug.*
+package-lock.json
