@@ -176,10 +176,10 @@
     rm -rf ~/.rncache/
     rm -rf ./ios/build
     watchman watch-del-all
+    yarn install
     yarn upgrade
     npm update
     react-native-git-upgrade
-    react-native upgrade
     yarn start --reset-cache
     yarn ios
     yarn web
