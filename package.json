@@ -16,7 +16,7 @@
     "react-scripts": "^1.1.1",
     "react-test-renderer": "^16.2.0",
     "remote-redux-devtools": "^0.5.12",
-    "semantic-release": "^12.4.1"
+    "semantic-release": "^15.0.0"
   },
   "scripts": {
     "start": "react-native start",
