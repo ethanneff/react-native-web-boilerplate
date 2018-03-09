@@ -14,6 +14,11 @@
   </a>
 </div>
 
+
+## Status
+
+* Super beta proof of concept. Still a work in progress.
+
 ## Purpose
 
 * Faster development for all platforms ![image](https://i.imgur.com/sa5z3DR.gif)
