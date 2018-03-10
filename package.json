@@ -16,7 +16,7 @@
     "react-scripts": "^1.1.1",
     "react-test-renderer": "^16.2.0",
     "remote-redux-devtools": "^0.5.12",
-    "semantic-release": "^12.4.1"
+    "semantic-release": "^15.0.2"
   },
   "scripts": {
     "start": "react-native start",
@@ -30,6 +30,9 @@
     "deploy": "gh-pages -d build",
     "test": "node node_modules/.bin/jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "testing": "node node_modules/jest/bin/jest.js --watch",
+    "npm-validate": "npm ls",
+    "npm-check-dep": "npm i -g depcheck && depcheck",
+    "npm-update-dep": "npm i -g yarn npm-check-updates react-native-git-upgrade && ncu -a && rm -rf ~/.rncache && rm -rf ./ios/build && rm -rf ./node_modules && watchman watch-del-all && react-native-git-upgrade && yarn install",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "lint-staged": {
@@ -76,10 +79,10 @@
   },
   "dependencies": {
     "prop-types": "^15.6.1",
-    "react": "^16.3.0-alpha.1",
+    "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-native": "0.54.0",
-    "react-native-web": "^0.5.1",
+    "react-native": "0.52.0",
+    "react-native-web": "^0.5.2",
     "react-redux": "^5.0.7",
     "react-router-dom": "^4.2.2",
     "react-router-native": "^4.2.0",
