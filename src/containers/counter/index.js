@@ -4,15 +4,16 @@ import { View, StyleSheet, Text, Button } from "react-native";
 
 // redux
 import PropTypes from "prop-types";
-import * as reducers from "./reducers";
 import * as constants from "./constants";
 import * as actions from "./actions";
+import reducers from "./reducers";
 import { connect } from "react-redux";
+import { injectReducer } from "../../common/store";
 
 const main = props => (
   <View>
     <Text>
-      {props.title} : {props.counter}
+      {props.title} : {props.store}
     </Text>
     <Button
       title="onIncrement"
@@ -62,9 +63,11 @@ main.defaultProps = {
   subtitle: "counter"
 };
 
+injectReducer(constants.reducer, reducers);
+
 export default connect(
   state => ({
-    counter: state[constants.reducer]
+    store: state[constants.reducer]
   }),
   dispatch => ({
     onIncrement: () => dispatch(actions.increment()),

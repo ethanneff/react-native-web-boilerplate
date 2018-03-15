@@ -175,6 +175,10 @@
   * update dependencies
 
     ```sh
+    yarn npm-update-dep
+    ```
+
+    ```sh
     npm i -g yarn npm-check-updates depcheck react-native-git-upgrade
     depcheck
     ncu -a

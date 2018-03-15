@@ -1,52 +1,68 @@
 // TODO: handle status bar
-// TODO: handle landscape change
-// TODO: handle open close
-// TODO: handle network
 
+// react
 import React from "react";
 import {
+  View,
+  StatusBar,
+  StyleSheet,
   AppState,
   Text,
-  View,
-  StyleSheet,
-  Button,
-  Alert,
-  StatusBar,
-  Dimensions
+  Dimensions,
+  NetInfo
 } from "react-native";
-import PropTypes from "prop-types";
 
-let { height, width } = Dimensions.get("window");
+// redux
+import PropTypes from "prop-types";
+import * as constants from "./constants";
+import * as actions from "./actions";
+import reducers from "./reducers";
+import { connect } from "react-redux";
+import { injectReducer } from "../../common/store";
 
 class main extends React.Component {
   componentDidMount() {
     AppState.addEventListener("change", this._handleAppStateChange);
-    Dimensions.addEventListener("change", this._handleOrientationChange);
+    Dimensions.addEventListener("change", this._handleDimensionChange);
+    NetInfo.addEventListener("connectionChange", this._handleNetworkChange);
+    NetInfo.getConnectionInfo().then(change =>
+      this._handleNetworkChange(change)
+    );
+    this.props.onStateChange(AppState.currentState);
+    this.props.onDimensionChange({
+      window: Dimensions.get("window"),
+      screen: Dimensions.get("screen")
+    });
   }
 
   componentWillUnmount() {
+    NetInfo.removeEventListener("connectionChange", this._handleNetworkChange);
     AppState.removeEventListener("change", this._handleAppStateChange);
-    Dimensions.addEventListener("change", this._handleOrientationChange);
+    Dimensions.addEventListener("change", this._handleDimensionChange);
   }
 
-  _handleOrientationChange = nextAppDimentions => {
-    console.log(nextAppDimentions);
+  _handleNetworkChange = change => {
+    this.props.onNetworkChange(change.currentTarget || change);
   };
 
-  _handleAppStateChange = nextAppState => {
-    if (
-      this.state.appState.match(/inactive|background/) &&
-      nextAppState === "active"
-    ) {
-      console.log("App has come to the foreground!");
-    }
+  _handleDimensionChange = change => {
+    this.props.onDimensionChange(change);
+  };
+
+  _handleAppStateChange = change => {
+    this.props.onStateChange(change);
   };
 
   render() {
+    const { props } = this;
     return (
-      <View>
+      <View style={styles.container}>
         <StatusBar barStyle="default" />
-        {this.props.children}
+        <Text>{props.store.dimensions.window.height}</Text>
+        <Text>{props.store.dimensions.window.width}</Text>
+        <Text>{props.store.status}</Text>
+        <Text>{props.store.network.effectiveType}</Text>
+        {props.children}
       </View>
     );
   }
@@ -72,4 +88,15 @@ main.defaultProps = {
   title: "app"
 };
 
-export default main;
+injectReducer(constants.reducer, reducers);
+
+export default connect(
+  state => ({
+    store: state[constants.reducer]
+  }),
+  dispatch => ({
+    onNetworkChange: value => dispatch(actions.updateNetwork(value)),
+    onStateChange: value => dispatch(actions.updateState(value)),
+    onDimensionChange: value => dispatch(actions.updateDimension(value))
+  })
+)(main);
