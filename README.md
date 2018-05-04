@@ -25,7 +25,7 @@
 
 ## Vision
 
-* Code re-usability
+* Useful
   * React Native everywhere
 * Simplicity
   * No task managers (`create-react-app` and `create-react-native-app` instead
@@ -217,3 +217,8 @@
   * Print: Entry, ":CFBundleIdentifier", Does Not Exist
 
     * make sure nothing is running on port :8080
+    * make sure `app.json` and `index.js` have the same app name
+    * mare sure `index.js` at root level
+    * `rm -rf ~/.rncache/ && rm -rf ./ios/build`
+    * `rm -rf ./ios && rm -rf ./android && react-native-git-upgrade`
+    
