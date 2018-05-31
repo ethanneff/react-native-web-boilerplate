@@ -11,7 +11,7 @@
     "husky": "^0.14.3",
     "jest-expo": "^27.0.1",
     "lint-staged": "^7.1.2",
-    "prettier": "^1.12.1",
+    "prettier": "^1.13.3",
     "react-devtools": "^3.2.3",
     "react-scripts": "^1.1.4",
     "react-test-renderer": "^16.4.0",
@@ -88,7 +88,7 @@
     "react-router-native": "^4.2.0",
     "react-router-redux": "^5.0.0-alpha.8",
     "redux": "^4.0.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.3.0"
   },
   "repository": {
     "type": "git",
